@@ -1,60 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Spotify Clone</title>
+    <link rel="stylesheet" href="./styles/style.css">
+  </head>
+  <body>
+    <nav>
+      <div>
+        <a href="/">
+          <img src="./images/spotify-logo.png" alt="Spotify Logo">
+        </a>
+      </div>
 
-  <img id="loading-logo" src="./images/loading-image.png" alt="loading logo">
-  
-  <nav>
-    <div>
-      <img src="./images/spotify-logo.svg" alt="spotify official logo">
-    </div>
+      <div class="nav-links-container">
+        <a href="/premium">Premium</a>
+        <a href="/discover">Discover</a>
+        <a href="/help">Help</a>
+        <a href="/download">Download</a>
+      </div>
+    </nav>
 
-    <div>
-      <a href="#">Premium</a>
-      <a href="#">Suporte</a>
-      <a href="#">Baixar</a>
-
-      <span>|</span>
-
-      <a href="#">Inscrever-se</a>
-      <a href="#">Entrar</a>
-
-      <button>
-      </button>
-    </div>
-  </nav>
-
-  
-  <div id="main-content-container">
     <main>
-      <h1>Escutar muda tudo</h1>
+      <header>
+        <h1>Music for everyone.</h1>
   
-      <p>Milhões de músicas e podcasts para explorar. E nem precisa de cartão de crédito.</p>
+        <p>Spotify is now free on mobile, tablet and computer. Listen to the right music, wherever you are.</p>
+      </header>
   
-      <a href="https://www.spotify.com/br/download">
-        <button>OBTENHA O SPOTIFY FREE</button>
-      </a>
-    </main>
-    
-    <footer>
+      <section class="app-content-container">
+        <h2>What’s on Spotify?</h2>
+  
+        <div>
+          <div>
+            <img src="./images/music-icon.png" alt="">
+            <h3>Millions of Songs</h3>
+            <p>There are millions of songs on Spotify</p>
+          </div>
+  
+          <div>
+            <img src="./images/high-quality-icon.png" alt="">
+            <h3>HD Music</h3>
+            <p>Listen to music as if you were listening live</p>
+          </div>
+  
+          <div>
+            <img src="./images/devices-icon.png" alt="">
+            <h3>Stream Everywhere</h3>
+            <p>Stream music on your smartphone, tablet or computer</p>
+          </div>
+        </div>
+      </section>
       
-    </footer>
-  </div>
-
-  <script>
-    const mainContainer = document.getElementById('main-content-container');
-    const loadingLogo = document.getElementById('loading-logo');
-
-    setTimeout(function() {
-      mainContainer.style.display = 'block';
-      loadingLogo.style.display = 'none';
-    }, 2000);
-  </script>
-</body>
+        
+      <section class="app-info-container">
+        <div>
+          <div>
+            <h2>It’s as yeezy as Kanye West.</h2>
+    
+            <div>
+              <div>
+                <h3>Search</h3>
+                <p>Know what you want to listen to? Just search and hit play.</p>
+              </div>
+    
+              <div>
+                <h3>Browse</h3>
+                <p>Check out the latest charts, brand new releases and great playlists for right now.</p>
+              </div>
+    
+              <div>
+                <h3>Discover</h3>
+                <p>Enjoy new music every Monday with your own personal playlist. Or sit back and enjoy Radio.</p>
+              </div>
+            </div>
+          </div>
+    
+          <div>
+            <img src="./images/spotify-app.jpg" alt="">
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
